@@ -4,19 +4,95 @@
     <meta charset="UTF-8">
     <title>My homepage</title>
     <style>
-        body{
-            text-align:center;
+        * {
+            margin: 0px;
+            padding: 0px;
         }
-        img{
-            margin:auto;
+
+        body {
+            text-align: center;
+            font-family: sans-serif;
         }
-        h1{
-            font-family:sans-serif;
+
+        #introductioncontent {
+            background-image: url(https://images.unsplash.com/photo-1422466654108-5e533f591881?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhaW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+            height: 30rem;
+            width: 100%;
+            background-size: cover;
         }
+
+        #introductioncontent h1 {
+            padding-top: 10rem;
+            color: white;
+            font-size: 3rem;
+        }
+
+        #introductioncontent h3 {
+            color: white;
+
+        }
+
+        #introduction a {
+            text-decoration: none;
+            background-color: orange;
+            color: white;
+            display: inline-block;
+            margin-top: 50px;
+            height: 50px;
+            width: 200px;
+            vertical-align: middle;
+            border-radius: 20px;
+
+        }
+
+        #interests {
+            background-color: #edc24c;
+        }
+
+        #swimming {
+            background-image: url(https://images.unsplash.com/photo-1560090995-01632a28895b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3dpbW1pbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+        }
+
+        #badminton {
+            background-image: url(https://images.unsplash.com/photo-1613918431703-aa50889e3be9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhZG1pbnRvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+        }
+        #videogames{
+            background-image: url(https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlkZW8lMjBnYW1lc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
+        }
+
+        #interests h1 {
+            padding-top: 10rem;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .interest {
+            height: 300px;
+            width: 70%;
+            background-size: cover;
+            margin-left: 15%;
+        }
+
+        .desc {}
     </style>
 </head>
+
 <body>
-    <h1>ON CONSTRUCTION..</h1>
-    <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=464&q=80" alt="">
-</body>
-</html>
+    <section id='introduction'>
+        <div id="introductioncontent">
+            <h1>Yihuan's Homepage</h1>
+            <h3>My Website made using CSS and HTML</h3>
+            <a href="">Find Out More About Me</a>
+        </div>
+    </section>
+    <section id='interests'>
+        <h1>My interests</h1>
+        <div class="interest" id='swimming'></div>
+        <div class="desc"><b>Swimming</b><br>I like to go swimming</div>
+        <div class="interest" id='badminton'></div>
+        <div class="desc"><b>Badminton</b><br>I like to play badminton</div>
+        <div class="interest" id='videogames'></div>
+        <div class="desc"><b>Videogames</b><br>I like to play videogames</div>
+        
+    </section>
+</body></html>
