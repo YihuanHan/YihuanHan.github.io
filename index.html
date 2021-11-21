@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         * {
             margin: 0px;
@@ -56,7 +57,8 @@
         #badminton {
             background-image: url(https://images.unsplash.com/photo-1613918431703-aa50889e3be9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhZG1pbnRvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
         }
-        #videogames{
+
+        #videogames {
             background-image: url(https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlkZW8lMjBnYW1lc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60);
         }
 
@@ -73,11 +75,90 @@
             margin-left: 15%;
         }
 
-        .desc {}
+        .navbar {
+            background-color: rgb(189, 93, 56);
+        }
+
+        @media all and (min-width:992px) {
+            .navbar {
+                display: none;
+            }
+        }
+
+        .navbar-dark .navbar-toggler {
+            color: rgba(255, 255, 255, 0.55);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* menu */
+        #menu {
+            background-color: rgb(189, 93, 56);
+            width: 300px;
+            height: 100vh;
+            text-align: center;
+            display: none;
+        }
+
+        @media all and (min-width:992px) {
+            #menu {
+                display: block;
+            }
+        }
+
+        #menu img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #menu ul li {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        #school{
+            background-image: url(https://media.istockphoto.com/photos/exterior-view-of-a-typical-american-school-building-picture-id1317007945?b=1&k=20&m=1317007945&s=170667a&w=0&h=L6exAWhMIvHk3ndOQdnRt6WNGfzcsh54WtCAVbO8NSk=);
+            height:500px;
+            width:100%;
+            background-size: cover;
+        }
+        #school h1{
+            padding-top:20%;
+        }
     </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="#">Yihuan's Homepage
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">School</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="menu">
+        <img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg" alt="">
+    </div>
     <section id='introduction'>
         <div id="introductioncontent">
             <h1>Yihuan's Homepage</h1>
@@ -85,6 +166,7 @@
             <a href="">Find Out More About Me</a>
         </div>
     </section>
+    <a href="#interests"></a>
     <section id='interests'>
         <h1>My interests</h1>
         <div class="interest" id='swimming'></div>
@@ -93,6 +175,17 @@
         <div class="desc"><b>Badminton</b><br>I like to play badminton</div>
         <div class="interest" id='videogames'></div>
         <div class="desc"><b>Videogames</b><br>I like to play videogames</div>
-        
+
     </section>
+    <section id='school'>
+        <h1>
+            School
+        </h1>
+        <h3>
+            My favorite subject is Maths
+        </h3>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body></html>
